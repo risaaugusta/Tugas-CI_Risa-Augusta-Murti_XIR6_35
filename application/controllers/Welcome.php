@@ -19,7 +19,7 @@ class Welcome extends CI_Controller {
 
 	public function profil()
 	{
-		$this->load->view('profil');
+		$this->load->view('agent-single');
 	}
 
 	public function utama()
@@ -39,7 +39,7 @@ class Welcome extends CI_Controller {
 
 	public function contact()
 	{
-		$this->load->view('contact');
+		$this->load->view('contact3');
 	}
 
 	

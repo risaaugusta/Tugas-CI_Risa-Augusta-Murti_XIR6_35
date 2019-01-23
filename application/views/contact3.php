@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>EstateAgency Bootstrap Template</title>
+  <title>JannahStore
+  </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?= base_url('assets')?>/img/favicon.png" rel="icon">
+  <link href="<?= base_url('assets')?>/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets')?>/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets')?>/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets')?>/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets')?>/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="<?= base_url('assets')?>/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="<?= base_url('assets')?>/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: EstateAgency
@@ -139,7 +140,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">Estate<span class="color-b">Agency</span></a>
+      <a class="navbar-brand text-brand" href="index.html">Jannah<span class="color-b">Store</span></a>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
@@ -147,16 +148,16 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="<?= base_url('Welcome/index/Risa/Perempuan')?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="<?= base_url('Welcome/event')?>">Event</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="property-grid.html">Property</a>
+            <a class="nav-link" href="<?= base_url('Welcome/gallery')?>">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog-grid.html">Blog</a>
+            <a class="nav-link" href="<?= base_url('Welcome/profil')?>">MyProfil</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -165,13 +166,13 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="property-single.html">Property Single</a>
-              <a class="dropdown-item active" href="blog-single.html">Blog Single</a>
+              <a class="dropdown-item" href="blog-single.html">Blog Single</a>
               <a class="dropdown-item" href="agents-grid.html">Agents Grid</a>
               <a class="dropdown-item" href="agent-single.html">Agent Single</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link active" href=""<?= base_url('Welcome/contact')?>"">Contact</a>
           </li>
         </ul>
       </div>
@@ -189,18 +190,20 @@
       <div class="row">
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
-            <h1 class="title-single">Book Cover Deisgn</h1>
-            <span class="color-text-a">News Single.</span>
+            <h1 class="title-single">Contact US</h1>
+            <span class="color-text-a">Silakan kunjungi link berikut untuk menghubungi admin <br>
+            <a href="https://www.instagram.com/risaaugusta">Admin </a>
+          </span>
           </div>
         </div>
         <div class="col-md-12 col-lg-4">
           <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
-                Book Cover Deisgn
+                Contact
               </li>
             </ol>
           </nav>
@@ -210,189 +213,138 @@
   </section>
   <!--/ Intro Single End /-->
 
-  <!--/ News Single Star /-->
-  <section class="news-single nav-arrow-b">
+  <!--/ Contact Star /-->
+  <section class="contact">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="news-img-box">
-            <img src="img/slide-3.jpg" alt="" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-          <div class="post-information">
-            <ul class="list-inline text-center color-a">
-              <li class="list-inline-item mr-2">
-                <strong>Author: </strong>
-                <span class="color-text-a">Morgan Jimenez</span>
-              </li>
-              <li class="list-inline-item mr-2">
-                <strong>Category: </strong>
-                <span class="color-text-a">Travel</span>
-              </li>
-              <li class="list-inline-item">
-                <strong>Date: </strong>
-                <span class="color-text-a">19 Apr. 2017</span>
-              </li>
-            </ul>
-          </div>
-          <div class="post-content color-text-a">
-            <p class="post-intro">
-              Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur
-              <strong>adipiscing</strong> elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-              Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-            </p>
-            <p>
-              Proin eget tortor risus. Donec sollicitudin molestie malesuada. Cras ultricies ligula sed magna dictum
-              porta. Pellentesque
-              in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-              dui. Lorem ipsum dolor sit amet.
-            </p>
-            <p>
-              Pellentesque in ipsum id orci porta dapibus. Curabitur non nulla sit amet nisl tempus convallis quis ac
-              lectus. Curabitur
-              non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Curabitur non
-              nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada.
-              Quisque velit nisi.
-            </p>
-            <blockquote class="blockquote">
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer class="blockquote-footer">
-                <strong>Albert Vargas</strong>
-                <cite title="Source Title">Author</cite>
-              </footer>
-            </blockquote>
-            <p>
-              Donec rutrum congue leo eget malesuada. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit
-              tortor eget felis
-              porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-            </p>
-          </div>
-          <div class="post-footer">
-            <div class="post-share">
-              <span>Share: </span>
-              <ul class="list-inline socials">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
+          <div class="contact-map box">
+            <div id="map" class="contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-        <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
-          <div class="title-box-d">
-            <h3 class="title-d">Comments (4)</h3>
-          </div>
-          <div class="box-comments">
-            <ul class="list-comments">
-              <li>
-                <div class="comment-avatar">
-                  <img src="img/author-2.jpg" alt="">
+        <div class="col-sm-12 section-t8">
+          <div class="row">
+            <div class="col-md-7">
+              <form class="form-a contactForm" action="" method="post" role="form">
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="url" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <textarea name="message" class="form-control" name="message" cols="45" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-a">Send Message</button>
+                  </div>
                 </div>
-                <div class="comment-details">
-                  <h4 class="comment-author">Emma Stone</h4>
-                  <span>18 Sep 2017</span>
-                  <p class="comment-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
-                    ipsam temporibus maiores
-                    quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.
-                  </p>
-                  <a href="3">Reply</a>
-                </div>
-              </li>
-              <li class="comment-children">
-                <div class="comment-avatar">
-                  <img src="img/author-1.jpg" alt="">
-                </div>
-                <div class="comment-details">
-                  <h4 class="comment-author">Oliver Colmenares</h4>
-                  <span>18 Sep 2017</span>
-                  <p class="comment-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
-                    ipsam temporibus maiores
-                    quae.
-                  </p>
-                  <a href="3">Reply</a>
-                </div>
-              </li>
-              <li>
-                <div class="comment-avatar">
-                  <img src="img/author-2.jpg" alt="">
-                </div>
-                <div class="comment-details">
-                  <h4 class="comment-author">Emma Stone</h4>
-                  <span>18 Sep 2017</span>
-                  <p class="comment-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
-                    ipsam temporibus maiores
-                    quae natus libero optio.
-                  </p>
-                  <a href="3">Reply</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="form-comments">
-            <div class="title-box-d">
-              <h3 class="title-d"> Leave a Reply</h3>
+              </form>
             </div>
-            <form class="form-a">
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <label for="inputName">Enter name</label>
-                    <input type="text" class="form-control form-control-lg form-control-a" id="inputName" placeholder="Name *"
-                      required>
-                  </div>
+            <div class="col-md-5 section-md-t3">
+              <div class="icon-box section-b2">
+                <div class="icon-box-icon">
+                  <span class="ion-ios-paper-plane"></span>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <label for="inputEmail1">Enter email</label>
-                    <input type="email" class="form-control form-control-lg form-control-a" id="inputEmail1"
-                      placeholder="Email *" required>
+                <div class="icon-box-content table-cell">
+                  <div class="icon-box-title">
+                    <h4 class="icon-title">Say Hello</h4>
                   </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <div class="form-group">
-                    <label for="inputUrl">Enter website</label>
-                    <input type="url" class="form-control form-control-lg form-control-a" id="inputUrl" placeholder="Website">
+                  <div class="icon-box-content">
+                    <p class="mb-1">Email.
+                      <span class="color-a">augustariris20@gmail.com</span>
+                    </p>
+                    <p class="mb-1">Phone.
+                      <span class="color-a">+6281233539400</span>
+                    </p>
                   </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <div class="form-group">
-                    <label for="textMessage">Enter message</label>
-                    <textarea id="textMessage" class="form-control" placeholder="Comment *" name="message" cols="45"
-                      rows="8" required></textarea>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <button type="submit" class="btn btn-a">Send Message</button>
                 </div>
               </div>
-            </form>
+              <div class="icon-box section-b2">
+                <div class="icon-box-icon">
+                  <span class="ion-ios-pin"></span>
+                </div>
+                <div class="icon-box-content table-cell">
+                  <div class="icon-box-title">
+                    <h4 class="icon-title">Find us in</h4>
+                  </div>
+                  <div class="icon-box-content">
+                    <p class="mb-1">
+                      Malang, Jawa Timur
+                      <br> ID.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="icon-box">
+                <div class="icon-box-icon">
+                  <span class="ion-ios-redo"></span>
+                </div>
+                <div class="icon-box-content table-cell">
+                  <div class="icon-box-title">
+                    <h4 class="icon-title">Social networks</h4>
+                  </div>
+                  <div class="icon-box-content">
+                    <div class="socials-footer">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="#" class="link-one">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--/ News Single End /-->
+  <!--/ Contact End /-->
 
   <!--/ footer Star /-->
   <section class="section-footer">
@@ -401,20 +353,19 @@
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+            <h3 class="w-title-a text-brand">JannahStore</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+              Berlokasi di Jl. Danau Buyan G7/F19 Sawojajar, Malang
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com</li>
+                <span class="color-text-a">Email.</span> augustariris20@gmail.com</li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234</li>
+                  <span class="color-text-a">Phone .</span> +6281233539400</li>
               </ul>
             </div>
           </div>
@@ -422,28 +373,22 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
+            <h3 class="w-title-a text-brand">Brands</h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Site Map</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">Dannis</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Legal</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">gajah Duduk</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Agent Admin</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">Wadimore</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Careers</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Affiliate</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Privacy Policy</a>
+                    <i class="fa fa-angle-right"></i> <a href="#">Elzata</a>
                   </li>
                 </ul>
               </div>
@@ -537,7 +482,7 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+              <span class="color-a">JannahStore</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">
@@ -559,18 +504,18 @@
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+  <script src="<?= base_url('assets')?>/lib/jquery/jquery.min.js"></script>
+  <script src="<?= base_url('assets')?>/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="<?= base_url('assets')?>/lib/popper/popper.min.js"></script>
+  <script src="<?= base_url('assets')?>/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="<?= base_url('assets')?>/lib/easing/easing.min.js"></script>
+  <script src="<?= base_url('assets')?>/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="<?= base_url('assets')?>/lib/scrollreveal/scrollreveal.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <script src="<?= base_url('assets')?>/contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src="<?= base_url('assets')?>/js/main.js"></script>
 
 </body>
 </html>
